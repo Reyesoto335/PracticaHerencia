@@ -1,0 +1,56 @@
+package Paquetededatos;
+
+
+public class Futbolista extends Integranteseleccion {
+    private Integer dorsal;
+    private String demarcacion;
+    private String concentrarse;
+    
+    public Futbolista (){
+    super();
+    }
+    
+    public Futbolista (Integer dorsal, String demarcacion,Integer id, String nombres,
+            String apellidos, Integer edad, String concentrarse){
+        super(id,nombres,apellidos,edad);
+        this.dorsal = dorsal;
+        this.demarcacion = demarcacion;
+        this.concentrarse = concentrarse;
+    }
+    
+    public void jugarpartido (){
+        
+    }
+    
+    public void entrenar (){
+        
+    }
+    
+    public void concentrarse (){
+        System.out.println("Concentrarse");
+    }
+
+    public Integer getDorsal() {
+        return dorsal;
+    }
+
+    public void setDorsal(Integer dorsal) {
+        this.dorsal = dorsal;
+    }
+
+    public String getDemarcacion() {
+        return demarcacion;
+    }
+
+    public void setDemarcacion(String demarcacion) {
+        this.demarcacion = demarcacion;
+    }
+    
+    public String getConcentrarse (){
+        return concentrarse;
+    }
+    
+    public void setConcentrarse (String concentrarse){
+        this.concentrarse = concentrarse;
+    }
+}
